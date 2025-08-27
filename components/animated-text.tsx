@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 interface AnimatedTextProps {
   text: string
@@ -28,26 +28,26 @@ export function AnimatedText({ text, className = "", once = false }: AnimatedTex
   }
 
   // Animation variants for each word
-  const child = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
+const child: Variants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring", // ✅ must be "spring" | "tween" | "inertia"
+      damping: 12,
+      stiffness: 100,
     },
-    hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
+  },
+  hidden: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      type: "spring", // ✅ not just string
+      damping: 12,
+      stiffness: 100,
     },
-  }
+  },
+}
 
   return (
     <motion.div

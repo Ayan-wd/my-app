@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Github, Linkedin, Mail, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import ContactForm from "@/components/contact-form"
@@ -42,8 +41,8 @@ export default function Home() {
             <AnimatedSection direction="left" delay={0.2}>
               <div className="space-y-4">
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  I'm a MERN Developer with expertise in both frontend and backend development. As an aspiring computer
-                  science student, I'm passionate about building full-stack web applications that solve real-world
+                  I&apos;m a MERN Developer with expertise in both frontend and backend development. As an aspiring computer
+                  science student, I&apos;m passionate about building full-stack web applications that solve real-world
                   problems.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300">
@@ -52,7 +51,7 @@ export default function Home() {
                   entire web development stack.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  Currently working as a freelancer, I'm available for any kind of web development work and specialize
+                  Currently working as a freelancer, I&apos;m available for any kind of web development work and specialize
                   in creating scalable, user-friendly applications using modern technologies.
                 </p>
               </div>
@@ -709,10 +708,10 @@ export default function Home() {
           <div className="mb-12">
             <AnimatedSection direction="left" delay={0.2}>
               <h3 className="text-2xl font-bold mb-6">Education</h3>
-              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row justify-between mb-4">
                   <div>
-                    <h4 className="text-xl font-semibold">Bachelor's in Computer Science</h4>
+                    <h4 className="text-xl font-semibold">Bachelor&apos;s in Computer Science</h4>
                     <p className="text-blue-600 dark:text-blue-400">University of Central Punjab, Lahore, Pakistan</p>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Undergraduate</p>
@@ -747,25 +746,25 @@ export default function Home() {
             <AnimatedSection direction="right" delay={0.3}>
               <h3 className="text-2xl font-bold mb-6">Certifications</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">AWS Cloud Practitioner</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Amazon Web Services certification covering cloud fundamentals
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">MERN Stack Development</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Comprehensive training in MongoDB, Express.js, React, and Node.js
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">Full-Stack Web Development</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Frontend and backend development with modern frameworks
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow hover:-translate-y-1 duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">JavaScript & React</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Advanced JavaScript programming and React development
@@ -823,7 +822,7 @@ export default function Home() {
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 dark:text-gray-300">
-                    I'm currently available for freelance work and always open to discussing new projects,
+                    I&apos;m currently available for freelance work and always open to discussing new projects,
                     opportunities, or partnerships. Feel free to reach out!
                   </p>
                 </div>

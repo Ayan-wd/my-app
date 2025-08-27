@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"${data.name}" <${data.email}>`,
-      to: "ayanmajid802@gmail.com", // ✅ always your inbox
+      to: "ayanmajid802@gmail.com", // ✅ your inbox
       subject: data.subject || "New Contact Form Submission",
       html: `
         <h3>New Contact Form Submission</h3>
@@ -25,9 +25,18 @@ export async function POST(req: Request) {
       `,
     })
 
-    return NextResponse.json({ success: true })
-  } catch (error: any) {
-    console.error("Error sending email:", error)
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 })
+    return NextResponse.json({ success: true }, { status: 200 })
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error("Error sending email:", error)
+      return NextResponse.json(
+        { success: false, error: error.message },
+        { status: 500 }
+      )
+    }
+    return NextResponse.json(
+      { success: false, error: "Unknown error" },
+      { status: 500 }
+    )
   }
 }
