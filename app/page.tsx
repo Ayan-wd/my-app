@@ -709,7 +709,7 @@ export default function Home() {
           <div className="mb-12">
             <AnimatedSection direction="left" delay={0.2}>
               <h3 className="text-2xl font-bold mb-6">Education</h3>
-              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
                 <div className="flex flex-col md:flex-row justify-between mb-4">
                   <div>
                     <h4 className="text-xl font-semibold">Bachelor's in Computer Science</h4>
@@ -747,25 +747,25 @@ export default function Home() {
             <AnimatedSection direction="right" delay={0.3}>
               <h3 className="text-2xl font-bold mb-6">Certifications</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
                   <h4 className="font-semibold">AWS Cloud Practitioner</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Amazon Web Services certification covering cloud fundamentals
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
                   <h4 className="font-semibold">MERN Stack Development</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Comprehensive training in MongoDB, Express.js, React, and Node.js
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
                   <h4 className="font-semibold">Full-Stack Web Development</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Frontend and backend development with modern frameworks
                   </p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow hover:-translate-y-1 duration-300">
                   <h4 className="font-semibold">JavaScript & React</h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Advanced JavaScript programming and React development
