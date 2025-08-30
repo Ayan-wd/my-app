@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ChevronRight } from "lucide-react"
+import { Github, Linkedin, Mail, ChevronRight,Phone  } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import ContactForm from "@/components/contact-form"
@@ -783,58 +783,73 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <AnimatedSection direction="left" delay={0.2}>
-              <div className="space-y-6">
-                <h3 className="text-xl font-semibold">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
-                    <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                    <a
-                      href="mailto:ayanmajid88@gmail.com"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                    >
-                      ayanmajid88@gmail.com
-                    </a>
-                  </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
-                    <Linkedin className="w-5 h-5 text-blue-600 mr-3" />
-                    <a
-                      href="https://www.linkedin.com/in/ayan-majid-4537b52a0/"
-                      target="_blank"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      rel="noreferrer"
-                    >
-                      LinkedIn Profile
-                    </a>
-                  </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
-                    <Github className="w-5 h-5 text-blue-600 mr-3" />
-                    <a
-                      href="https://github.com/Ayan-wd"
-                      target="_blank"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      rel="noreferrer"
-                    >
-                      GitHub Profile
-                    </a>
-                  </div>
-                </div>
-                <div className="pt-4">
-                  <p className="text-gray-700 dark:text-gray-300">
-                    I&apos;m currently available for freelance work and always open to discussing new projects,
-                    opportunities, or partnerships. Feel free to reach out!
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <AnimatedSection direction="left" delay={0.2}>
+    <div className="space-y-6">
+      <h3 className="text-xl font-semibold">Contact Information</h3>
+      <div className="space-y-4">
+        <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+          <Mail className="w-5 h-5 text-blue-600 mr-3" />
+          <a
+            href="mailto:ayanmajid88@gmail.com"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            ayanmajid88@gmail.com
+          </a>
+        </div>
 
-            <AnimatedSection direction="right" delay={0.3}>
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <ContactForm />
-              </div>
-            </AnimatedSection>
-          </div>
+        <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+          <Linkedin className="w-5 h-5 text-blue-600 mr-3" />
+          <a
+            href="https://www.linkedin.com/in/ayan-majid-4537b52a0/"
+            target="_blank"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            rel="noreferrer"
+          >
+            LinkedIn Profile
+          </a>
+        </div>
+
+        <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+          <Github className="w-5 h-5 text-blue-600 mr-3" />
+          <a
+            href="https://github.com/Ayan-wd"
+            target="_blank"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            rel="noreferrer"
+          >
+            GitHub Profile
+          </a>
+        </div>
+
+        {/* ✅ Phone number added */}
+        <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+          <Phone className="w-5 h-5 text-blue-600 mr-3" />
+          <a
+            href="tel:+923065169753"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            0306-5169753
+          </a>
+        </div>
+      </div>
+
+      <div className="pt-4">
+        <p className="text-gray-700 dark:text-gray-300">
+          I&apos;m currently available for freelance work and always open to discussing new projects,
+          opportunities, or partnerships. Feel free to reach out!
+        </p>
+      </div>
+    </div>
+  </AnimatedSection>
+
+  <AnimatedSection direction="right" delay={0.3}>
+    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+      <ContactForm />
+    </div>
+  </AnimatedSection>
+</div>
+
         </div>
       </section>
 
