@@ -6,35 +6,32 @@ import { motion } from "framer-motion"
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" })
   const [status, setStatus] = useState("")
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus("Sending...")
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      })
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: form.name,
+      email: form.email,
+      subject: form.subject,
+      message: form.message,
+    }),
+  });
 
-      const data = await res.json()
-
-      if (data.success) {
-        setStatus("✅ Message sent successfully!")
-        setForm({ name: "", email: "", subject: "", message: "" })
-      } else {
-        setStatus("❌ Failed to send. Please try again.")
-      }
-    } catch (err) {
-      console.error(err)
-      setStatus("❌ Something went wrong.")
-    }
+  const result = await res.json();
+  if (result.success) {
+    alert("Message sent ✅");
+  } else {
+    alert("Failed ❌: " + result.error);
   }
+};
+
 
   return (
     <motion.form
