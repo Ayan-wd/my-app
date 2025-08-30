@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" })
-  const [status, setStatus] = useState("")
+  const [status] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
