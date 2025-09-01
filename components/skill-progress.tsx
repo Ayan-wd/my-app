@@ -29,12 +29,12 @@ export function SkillProgress({ name, percentage, color = "bg-purple-600" }: Ski
   }, [isInView, controls, percentage, hasAnimated])
 
   return (
-    <div ref={ref} className="mb-4">
-      <div className="flex justify-between mb-1">
-        <span className="text-sm font-medium">{name}</span>
-        <span className="text-sm font-medium">{percentage}%</span>
+    <div ref={ref} className="mb-4 sm:mb-6">
+      <div className="flex justify-between mb-2 sm:mb-3">
+        <span className="text-sm sm:text-base font-medium">{name}</span>
+        <span className="text-sm sm:text-base font-medium">{percentage}%</span>
       </div>
-      <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+      <div className="w-full h-3 sm:h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
         <motion.div className={`h-full rounded-full ${color}`} initial={{ width: "0%" }} animate={controls} />
       </div>
     </div>

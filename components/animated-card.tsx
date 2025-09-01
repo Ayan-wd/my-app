@@ -12,7 +12,7 @@ interface AnimatedCardProps {
 export function AnimatedCard({ children, className = "", delay = 0 }: AnimatedCardProps) {
   return (
     <motion.div
-      className={`${className} relative overflow-hidden group`}
+      className={`${className} relative overflow-hidden group cursor-pointer`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -25,6 +25,7 @@ export function AnimatedCard({ children, className = "", delay = 0 }: AnimatedCa
         y: -5,
         transition: { duration: 0.2 },
       }}
+      whileTap={{ scale: 0.98 }}
     >
       <motion.div
         className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

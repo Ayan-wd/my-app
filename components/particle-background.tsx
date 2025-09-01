@@ -26,15 +26,20 @@ export function ParticleBackground() {
     resizeCanvas()
     window.addEventListener("resize", resizeCanvas)
 
-    // Create particles
-    const particleCount = 100
+    const getParticleCount = () => {
+      if (width < 768) return 30 // Mobile
+      if (width < 1024) return 60 // Tablet
+      return 100 // Desktop
+    }
+
+    const particleCount = getParticleCount()
     const particles: Particle[] = []
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        radius: Math.random() * 2 + 1,
+        radius: Math.random() * (width < 768 ? 1.5 : 2) + (width < 768 ? 0.5 : 1),
         vx: Math.random() * 0.5 - 0.25,
         vy: Math.random() * 0.5 - 0.25,
         color: `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(
@@ -63,6 +68,8 @@ export function ParticleBackground() {
         ctx.fill()
       })
 
+      const connectionDistance = width < 768 ? 80 : 100
+
       // Draw connections
       particles.forEach((p1, i) => {
         particles.slice(i + 1).forEach((p2) => {
@@ -70,9 +77,9 @@ export function ParticleBackground() {
           const dy = p1.y - p2.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < 100) {
+          if (distance < connectionDistance) {
             ctx.beginPath()
-            ctx.strokeStyle = `rgba(150, 150, 150, ${0.2 * (1 - distance / 100)})`
+            ctx.strokeStyle = `rgba(150, 150, 150, ${0.2 * (1 - distance / connectionDistance)})`
             ctx.lineWidth = 0.5
             ctx.moveTo(p1.x, p1.y)
             ctx.lineTo(p2.x, p2.y)
@@ -95,7 +102,7 @@ export function ParticleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 opacity-30 dark:opacity-20"
+      className="fixed top-0 left-0 w-full h-full -z-10 opacity-20 sm:opacity-30 dark:opacity-10 dark:sm:opacity-20"
       style={{ pointerEvents: "none" }}
     />
   )
