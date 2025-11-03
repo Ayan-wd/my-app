@@ -151,7 +151,7 @@ export function Navbar() {
               ))}
               <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
                 <Link
-                  href="/document/AYanMajidCVUpdated.docx"
+                  href="/document/AyanMajid_ATS_Optimized_CV.docx"
                   target="_blank"
                   download
                   className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
