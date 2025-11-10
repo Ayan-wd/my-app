@@ -16,7 +16,7 @@ export function HeroSection() {
               <AnimatedText text="Ayan Majid" className="text-4xl md:text-5xl font-bold tracking-tight" />
               <AnimatedText
                 text="MERN Engineer"
-                className="text-2xl md:text-3xl font-semibold mt-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
+                className="text-2xl md:text-3xl font-semibold mt-2 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent"
                 once={true}
               />
             </div>
@@ -27,7 +27,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               Specializing in MERN , Frontend, and backend with expertise in deploying Web
-              solutions and integrating APIs.
+              solutions and integrating APIs
             </ClientMotion>
             <ClientMotion
               className="flex flex-wrap gap-4"
