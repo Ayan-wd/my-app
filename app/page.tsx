@@ -46,8 +46,8 @@ export default function Home() {
             <AnimatedSection direction="left" delay={0.2}>
               <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm a MERN Developer with expertise in both frontend and backend development. As an aspiring computer
-                  science student, I'm passionate about building full-stack web applications that solve real-world
+                  I&apos;m a MERN Developer with expertise in both frontend and backend development. As an aspiring computer
+                  science student, I&apos;m passionate about building full-stack web applications that solve real-world
                   problems.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -56,7 +56,7 @@ export default function Home() {
                   entire web development stack.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Currently working as a freelancer, I'm available for any kind of web development work and specialize
+                  Currently working as a freelancer, I&apos;m available for any kind of web development work and specialize
                   in creating scalable, user-friendly applications using modern technologies.
                 </p>
               </div>
@@ -725,7 +725,7 @@ export default function Home() {
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">
                 <div className="flex flex-col sm:flex-row justify-between mb-4">
                   <div>
-                    <h4 className="text-lg sm:text-xl font-semibold">Bachelor's in Computer Science</h4>
+                    <h4 className="text-lg sm:text-xl font-semibold">Bachelor&apos;s in Computer Science</h4>
                     <p className="text-blue-600 dark:text-blue-400 text-sm sm:text-base">
                       University of Central Punjab, Lahore, Pakistan
                     </p>
@@ -853,7 +853,7 @@ export default function Home() {
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
-                    I'm currently available for freelance work and always open to discussing new projects,
+                    I&apos;m currently available for freelance work and always open to discussing new projects,
                     opportunities, or partnerships. Feel free to reach out!
                   </p>
                 </div>
